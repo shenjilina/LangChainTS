@@ -1,29 +1,56 @@
 {
-  "name": "nuxt-app",
+  "name": "langchain-chat-assistant",
+  "version": "1.0.0",
+  "description": "基于 LangChain 和 Ollama 的智能聊天助手",
   "private": true,
   "type": "module",
+  "keywords": [
+    "nuxt",
+    "vue",
+    "langchain",
+    "ollama",
+    "chat",
+    "ai"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "type-check": "nuxt typecheck"
   },
   "dependencies": {
-    "@element-plus/icons-vue": "^2.3.1",
     "@microsoft/fetch-event-source": "^2.0.1",
-    "element-plus": "^2.7.2",
+    "@tdesign-vue-next/chat": "^0.4.3",
     "nuxt": "^3.11.2",
+    "tdesign-icons-vue-next": "^0.3.6",
+    "tdesign-vue-next": "^1.15.1",
+    "uuid": "^11.1.0",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
-    "@element-plus/nuxt": "^1.0.9",
     "@langchain/community": "^0.0.57",
     "@langchain/core": "^0.1.63",
-    "@unocss/nuxt": "^0.60.2",
+    "@nuxt/eslint-config": "^0.3.13",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.24.0",
     "langchain": "^0.1.37",
     "sass": "^1.77.1",
-    "sass-loader": "^14.2.1"
+    "sass-loader": "^14.2.1",
+    "typescript": "^5.4.0",
+    "vue-tsc": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
   }
 }

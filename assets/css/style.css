@@ -4,7 +4,7 @@ body {
 
   --color-blue: #275dad;
 
-  --color-background: #292626;
+  --color-background: #fff;
 
   --box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
 
@@ -21,6 +21,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  margin: 0;
 }
 
 a {
